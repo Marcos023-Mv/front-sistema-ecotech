@@ -1,0 +1,100 @@
+.login-page {
+  min-height: 100vh;
+  background: var(--bg-app);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+}
+.login-bg-leaf {
+  position: absolute;
+  left: -80px;
+  top: -20px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.login-bg-line-1, .login-bg-line-2 {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  pointer-events: none;
+}
+.login-bg-line-1 {
+  width: 420px;
+  height: 420px;
+  top: -220px;
+  right: -140px;
+  border-top-color: var(--accent-green);
+  border-right-color: var(--accent-blue);
+  opacity: 0.4;
+  transform: rotate(-15deg);
+}
+.login-bg-line-2 {
+  width: 300px;
+  height: 300px;
+  bottom: -180px;
+  left: -100px;
+  border-bottom-color: var(--accent-blue);
+  border-left-color: var(--accent-green);
+  opacity: 0.3;
+}
+
+.login-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.login-logo { display: flex; align-items: center; gap: 16px; }
+.login-logo-text { display: flex; flex-direction: column; }
+.login-logo-title { font-size: 34px; font-weight: 800; letter-spacing: -0.5px; }
+.login-logo-sub { font-size: 12px; letter-spacing: 4px; color: var(--text-muted); font-weight: 600; }
+
+.login-fields { display: flex; flex-direction: column; gap: 16px; }
+.login-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+.login-checkbox input { accent-color: var(--accent-blue); width: 15px; height: 15px; }
+.login-eye-btn { background: none; border: none; display: flex; color: inherit; cursor: pointer; padding: 0; }
+
+.login-error {
+  margin: 0;
+  color: var(--status-abaixo-fg);
+  background: var(--status-abaixo-bg);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13.5px;
+}
+
+.login-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, var(--accent-green-strong), var(--accent-blue-strong));
+  color: #052013;
+  font-size: 15.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+.login-submit:hover:not(:disabled) { filter: brightness(1.08); }
+.login-submit:disabled { opacity: 0.7; cursor: not-allowed; }
+
+@media (max-width: 520px) {
+  .login-logo-title { font-size: 27px; }
+}

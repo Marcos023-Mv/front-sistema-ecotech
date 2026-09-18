@@ -1,0 +1,19 @@
+.table-scroll { width: 100%; }
+.app-table { width: 100%; border-collapse: collapse; min-width: 560px; }
+.app-table thead th {
+  font-size: 12.5px;
+  text-transform: none;
+  color: var(--text-muted);
+  font-weight: 700;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.app-table tbody td {
+  padding: 13px 14px;
+  font-size: 14px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.app-table tbody tr:last-child td { border-bottom: none; }
+.app-table tbody tr:hover { background: var(--bg-card-alt); }
+.table-empty { text-align: center; color: var(--text-muted); padding: 30px 0 !important; }
