@@ -1,3 +1,4 @@
+
 # 🌿 Ecotech Solutions — Sistema de Irrigação Inteligente
 
 ## 📖 Sobre o projeto
@@ -149,3 +150,5 @@ src/
 - Conectar `VITE_API_URL` a um backend real (hoje os dados são mockados em `src/utils/mockData.ts` e mantidos em memória via Context API).
 - Trocar a autenticação simulada (`sessionStorage`) por um backend real de login.
 - Persistir as plantas cadastradas em um banco de dados em vez de estado em memória.
+=======
+
