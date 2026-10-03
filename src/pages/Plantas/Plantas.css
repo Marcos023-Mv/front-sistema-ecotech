@@ -6,7 +6,7 @@
 }
 .plantas-table-card { min-width: 0; }
 .plantas-search { width: 260px; }
-.plantas-side { display: flex; flex-direction: column; gap: 18px; }
+.plantas-side { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
 
 .plant-name-cell {
   display: flex;
@@ -70,7 +70,7 @@
   font-size: 34px;
   flex-shrink: 0;
 }
-.plant-preview-info { display: flex; flex-direction: column; gap: 8px; }
+.plant-preview-info { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
 .plant-preview-info strong { font-size: 17px; color: var(--text-primary); }
 .plant-preview-range {
   display: flex;

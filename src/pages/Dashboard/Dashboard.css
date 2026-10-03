@@ -16,7 +16,7 @@
   gap: 18px;
   align-items: start;
 }
-.dash-side-col { display: flex; flex-direction: column; gap: 18px; }
+.dash-side-col { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
 .dash-filter-dropdown { margin-bottom: 14px; }
 .dropdown-trigger-block { width: 100%; justify-content: space-between; }
 .dropdown-menu-block { left: 0; right: 0; width: 100%; }
@@ -31,7 +31,7 @@
   gap: 18px;
 }
 .stats-row { display: flex; flex-direction: column; gap: 14px; }
-.stats-item { display: flex; align-items: center; justify-content: space-between; }
+.stats-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .stats-item-label { display: flex; align-items: center; gap: 7px; font-size: 13.5px; color: var(--text-secondary); }
 .stats-item strong { font-size: 16px; color: var(--text-primary); }
 

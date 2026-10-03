@@ -68,5 +68,6 @@
 .chart-wrap { width: 100%; }
 
 @media (max-width: 900px) {
-  .page-body { padding: 0 16px 30px; }
+  .page-body { padding: 0 16px 30px; gap: 16px; }
+  .dropdown-menu { max-width: calc(100vw - 32px); }
 }

@@ -71,6 +71,7 @@ html, body {
 
 #root {
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -84,4 +85,6 @@ button { font-family: inherit; }
 
 @media (max-width: 900px) {
   .hide-mobile { display: none !important; }
+  /* evita o zoom automático do iOS ao focar campos com fonte < 16px */
+  input, select, textarea { font-size: 16px !important; }
 }

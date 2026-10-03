@@ -10,8 +10,30 @@ import Dashboard from './pages/Dashboard';
 import Monitor from './pages/Monitor';
 import Plantas from './pages/Plantas';
 import Configuracoes from './pages/Configuracoes';
+import Watch from './pages/Watch';
+import { useIsWatch } from './hooks/useIsWatch';
 
 function AppRoutes() {
+  const isWatch = useIsWatch();
+
+  // No Apple Watch só existem o login e o controle de irrigação.
+  if (isWatch) {
+    return (
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Watch />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    );
+  }
+
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
